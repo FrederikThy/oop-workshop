@@ -1,0 +1,14 @@
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/bin/Debug/net8.0/workshop
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/bin/Debug/net8.0/workshop.deps.json
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/bin/Debug/net8.0/workshop.runtimeconfig.json
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/bin/Debug/net8.0/workshop.dll
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/bin/Debug/net8.0/workshop.pdb
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.AssemblyInfoInputs.cache
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.AssemblyInfo.cs
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.csproj.CoreCompileInputs.cache
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.dll
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/refint/workshop.dll
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.pdb
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/workshop.genruntimeconfig.cache
+/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/Debug/net8.0/ref/workshop.dll

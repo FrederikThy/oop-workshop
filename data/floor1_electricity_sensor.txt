@@ -1,0 +1,38 @@
+building:White House
+type:setpoint
+floor:1
+media:electricity
+modality:energy
+unit:joule
+
+1 0
+2 0
+3 1
+4 5
+5 10
+6 13
+7 17
+8 22
+9 28
+10 33
+11 35
+12 35
+13 35
+14 35
+15 35
+16 35
+17 35
+18 40
+19 44
+20 46
+21 47
+22 49
+23 49
+24 49
+25 49
+26 49
+27 49
+28 49
+29 49
+30 49
+
