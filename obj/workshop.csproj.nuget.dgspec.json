@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/frederikthygesen/Downloads/sdu-oop-workshop/workshop.csproj": {}
+    "C:\\Users\\madsp\\RiderProjects\\oop-workshop\\workshop.csproj": {}
   },
   "projects": {
-    "/Users/frederikthygesen/Downloads/sdu-oop-workshop/workshop.csproj": {
+    "C:\\Users\\madsp\\RiderProjects\\oop-workshop\\workshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/frederikthygesen/Downloads/sdu-oop-workshop/workshop.csproj",
+        "projectUniqueName": "C:\\Users\\madsp\\RiderProjects\\oop-workshop\\workshop.csproj",
         "projectName": "workshop",
-        "projectPath": "/Users/frederikthygesen/Downloads/sdu-oop-workshop/workshop.csproj",
-        "packagesPath": "/Users/frederikthygesen/.nuget/packages/",
-        "outputPath": "/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/",
+        "projectPath": "C:\\Users\\madsp\\RiderProjects\\oop-workshop\\workshop.csproj",
+        "packagesPath": "C:\\Users\\madsp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\madsp\\RiderProjects\\oop-workshop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/frederikthygesen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\madsp\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
