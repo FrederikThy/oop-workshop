@@ -1,0 +1,21 @@
+building:White House
+type:sensor
+floor:2
+room:3
+media:air
+modality:temperature
+unit:celcius
+
+1 22.5
+2 22.3
+3 21.6
+4 21.7
+5 21.1
+6 20.4
+7 20.1
+8 19.7
+9 20.4
+28 26.4
+29 25.7
+30 25.1
+
