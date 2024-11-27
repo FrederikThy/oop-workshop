@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/frederikthygesen/Downloads/sdu-oop-workshop/workshop.csproj",
+      "projectUniqueName": "/Users/frederikthygesen/RiderProjects/oop-workshop/workshop.csproj",
       "projectName": "workshop",
-      "projectPath": "/Users/frederikthygesen/Downloads/sdu-oop-workshop/workshop.csproj",
+      "projectPath": "/Users/frederikthygesen/RiderProjects/oop-workshop/workshop.csproj",
       "packagesPath": "/Users/frederikthygesen/.nuget/packages/",
-      "outputPath": "/Users/frederikthygesen/Downloads/sdu-oop-workshop/obj/",
+      "outputPath": "/Users/frederikthygesen/RiderProjects/oop-workshop/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/frederikthygesen/.nuget/NuGet/NuGet.Config"
