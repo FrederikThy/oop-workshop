@@ -8,7 +8,7 @@ public class History {
     Samples
   }
   
-  ISet<Channel> channels = new HashSet<Channel>();
+  public ISet<Channel> channels = new HashSet<Channel>();
   
   public History (string directory) {
     string[] files = Directory.GetFiles(directory);

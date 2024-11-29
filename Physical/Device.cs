@@ -6,8 +6,14 @@ public class Device
     public string media;
     public string unit;
     public string modality;
+    public Room room;
 
     public Device()
     {
+    }
+
+    public void GetData(string building, int floor, int room)
+    {
+        
     }
 }

@@ -2,10 +2,9 @@ namespace Physical;
 
 public class Building
 { 
-    string building;
+    public string building;
 
-    public Building(string building)
+    public Building()
     {
-        this.building = building;
     }
 }

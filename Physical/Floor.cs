@@ -1,11 +1,10 @@
 namespace Physical;
 
-public class Floor
+public class Floor : Building
 { 
     public int floor;
 
-    public Floor(int floor)
+    public Floor()
     {
-        this.floor = floor;
     }
 }
