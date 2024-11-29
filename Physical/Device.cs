@@ -7,6 +7,7 @@ public class Device
     public string unit;
     public string modality;
     public Room room;
+    public int deviceChannel;
 
     public Device()
     {

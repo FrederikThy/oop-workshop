@@ -14,16 +14,13 @@ foreach (Channel channel in channels) {
 hist.Replay();
 
 // Main method starts here
-Console.WriteLine("Hello, World!");
+Room room1 = new Room(1,1,"White House");
 
-Room room1 = new Room(1,1,"White House",4);
+Sensor room1TempSensor = new Sensor("Sensor","Air","Celsius","Temperature",room1,4);
+SetPoint room1SetPoint = new SetPoint("Setpoint","Air","Celsius","Temperature",room1,5);
+Actuator actuator = new Actuator("Actuator","Air","Celsius","Temperature");
 
-Sensor room1TempSensor = new Sensor("Temp","Air","Celsius","Temperature",room1);
-room1TempSensor.TempSensor(room1,channels);
-
-Console.WriteLine(channels.Count);
-
-
+actuator.SetTemperature(room1TempSensor, room1SetPoint,channels);
 
 class DemoConsumer : IChannelSubscriber {
   public void NewSample (Channel channel, Sample? sample) {

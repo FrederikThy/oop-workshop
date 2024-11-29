@@ -2,13 +2,14 @@ namespace Physical;
 
 public class Sensor : Device
 {
-    public Sensor(string type, string media, string unit,string modality, Room room)
+    public Sensor(string type, string media, string unit,string modality, Room room, int deviceChannel)
     {
         this.type = type;
         this.media = media;
         this.unit = unit;
         this.modality = modality;
         this.room = room;
+        this.deviceChannel = deviceChannel;
     }
 
     public void LightSensor(Room room, ISet<Channel> channels)
@@ -17,35 +18,14 @@ public class Sensor : Device
         foreach (Channel channel in channels)
         {
             channel_i++;
-            if (channel_i == room.channel && type == "light")
+            if (channel_i == deviceChannel && type == "Sensor")
             {
                 foreach (Sample sample in channel.Samples)
                 {
                     Console.WriteLine(sample.value);
                 }
             }
-            else
-            {
-                Console.WriteLine("This sensor is not a light sensor");
-                break;
-            }
-        }
-    }
-
-    public void TempSensor(Room room, ISet<Channel> channels)
-    {
-        int channel_i = 0;
-        foreach (Channel channel in channels)
-        {
-            channel_i++;
-            if (channel_i == room.channel && type == "Temp")
-            {
-                foreach (Sample sample in channel.Samples)
-                {
-                    Console.WriteLine(sample.value);
-                }
-            }
-            else
+            else if (modality != "Light")
             {
                 Console.WriteLine("This sensor is not a temperature sensor");
                 break;
@@ -53,30 +33,63 @@ public class Sensor : Device
         }
     }
 
-    public void OccupancySensor(Room room,ISet<Channel> channels)
+    public void OccupancySensor(Room room, ISet<Channel> channels)
     {
         int channel_i = 0;
         foreach (Channel channel in channels)
         {
             channel_i++;
-            if (channel_i == room.channel && type == "Occupancy")
+            if (channel_i == deviceChannel && type == "Sensor")
             {
                 foreach (Sample sample in channel.Samples)
                 {
                     Console.WriteLine(sample.value);
                 }
             }
-            else
+            else if (modality != "Occupancy")
             {
-                Console.WriteLine("This sensor is not an occupancy sensor");
+                Console.WriteLine("This sensor is not a temperature sensor");
                 break;
             }
         }
     }
 
-    public void ElectricitySensor(Room room)
+    public void ElectricitySensor(Room room, ISet<Channel> channels)
     {
-        Console.WriteLine("ElectricitySensor");
+        int channel_i = 0;
+        foreach (Channel channel in channels)
+        {
+            channel_i++;
+            if (channel_i == deviceChannel && type == "Sensor")
+            {
+                foreach (Sample sample in channel.Samples)
+                {
+                    Console.WriteLine(sample.value);
+                }
+            }
+            else if (modality != "Electricity")
+            {
+                Console.WriteLine("This sensor is not a temperature sensor");
+                break;
+            }
+        }
+    }
+    public double TempSensor(ISet<Channel> channels, int i)
+    {
+        int channel_i = 0;
+        foreach (Channel channel in channels)
+        {
+            channel_i++;
+            if (channel_i == deviceChannel && type == "Sensor")
+            {
+                return channel.Samples[i].value;
+            }
+            else if (modality != "Temperature")
+            {
+                return 0.0;
+            }
+        }
+        return 0.0;
     }
     
 }

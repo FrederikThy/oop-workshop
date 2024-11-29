@@ -10,9 +10,30 @@ public class Actuator : Device
         this.modality = modality;
     }
 
-    public int SetTemperature(Sensor sensor,SetPoint setPoint)
+    public void SetTemperature(Sensor sensor,SetPoint setPoint,ISet<Channel> channels)
     {
-        int temperature = 0;
-        return temperature;
+        List<double> sensorSamples = new List<double>();
+        List<double> setPointSamples = new List<double>();
+
+        for (int i = 0; i < 30; i++)
+        {
+            setPointSamples.Add(setPoint.GetSetPoint(channels,i));
+            sensorSamples.Add(sensor.TempSensor(channels,i));
+        }
+            
+        
+        for (int i = 0; i < 30; i++)
+            if (sensorSamples[i] > setPointSamples[i])
+            {
+                Console.WriteLine("Skru ned");
+            }
+            else if (sensorSamples[i] < setPointSamples[i])
+            {
+                Console.WriteLine("Skru op");
+            }
+            else
+            {
+                Console.WriteLine("Perfekt!");
+            }
     }
 }
